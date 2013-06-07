@@ -4,7 +4,7 @@ class bumblebee::package {
     apt::ppa { 'ppa:bumblebee/stable': }
 
     package { $bumblebee::packages:
-        ensure => $bumblebee::ensure,
+        ensure  => $bumblebee::ensure,
         require => Apt::Ppa['ppa:bumblebee/stable'],
     }
 

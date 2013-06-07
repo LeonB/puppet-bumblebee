@@ -14,13 +14,13 @@
 #
 class bumblebee::params {
 
-	### Application related parameters
+  ### Application related parameters
 
-	$packages = $::operatingsystem ? {
+  $packages = $::operatingsystem ? {
         # default => 'bumblebee'
-		default => ['bbswitch-dkms']
-	}
+    default => ['bbswitch-dkms']
+  }
 
-	$enabled = true
+  $enabled = true
 
 }
